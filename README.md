@@ -5,45 +5,21 @@
   - [Dotnet ASP.NET 5 Runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
   - [Dotnet ASP.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-# Before we start
-  - Clone repository
-  - Install dependencie (should be done automatically when running the project):
-```sh
-    cd ApiApp
-    dotnet restore
-```
-### Run:
-  - Use the debug function in either visual studio or vs code
-  - Or just run this command:
-```sh
-dotnet run
-```
-
-# Gerneral information about the project
-No libraries are used in the javascript. We utilize Gulp to bundle and compile both the typeScript and the SCSS.
-
-# Database
-  - We don't use any databse Engine for this project, but feel free to switch if you want to use any database Engine.
-# Controllers:  
-## WeatherForecast Controller:
-Get.
-  - [Route("api/[controller]/[action]")]
-  
 # Test objectives:
 In general, we want to have at least some code in the following three languages.
   - C#
   - Javascript (TypeScript)
   - CSS (SCSS)
+  - Applying Solid Pricnicple 
 
 Using any external library is allowed, the same goes for old code in your repository. Utilizing external libraries does have to be utilized for a good reason though.
 
 ## The test (Whats your task)
-### Basic CRUD operations(Read operation is enough for this task)
+### Basic CRUD operations
 Add basic CRUD oparations to the application using single page application framework(Angular).
-Add the rest of CRUD Operation(Edit- Delete- Create) to the Project will be big bonus
 ## Delivery
 Send the frontend without node_modules for front end project
-Send API in case of adding any CRUD Operation.
+Send API in case of CRUD Operation.
 ### Web Components
 When doing frontend, we use web components so we can have reusable and framework agnostic code. We prefer you do components in "web components"
 Check *Frontend/Scripts/WebComponents/UserModal.component.ts* for inspiration on how to create web components.
