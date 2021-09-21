@@ -16,7 +16,17 @@ Using any external library is allowed, the same goes for old code in your reposi
 
 ## The test (Whats your task)
 ### Basic CRUD operations
-Add basic CRUD oparations to the application using single page application framework(Angular).
+Creating a CRUD application using Angular 12 in the front end, Dot Net 5 in the backend, and Entity framework core On GitHub.
+Data Dictionary 
+**Filed Name   	Type	O/M	Value
+First Name	   text	  M	 	No
+Last Name      text 	M		No
+Email	         text	  M		No
+Date OF Birth	 Date	  M		No
+Phone Number	 text 	M		No
+
+Using ASP.NET Core Identity will be big Bonus 
+
 ## Delivery
 Send the frontend without node_modules for front end project
 Send API in case of CRUD Operation.
