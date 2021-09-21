@@ -17,8 +17,9 @@ Using any external library is allowed, the same goes for old code in your reposi
 ## The test (Whats your task)
 ### Basic CRUD operations
 Creating a CRUD application using Angular 12 in the front end, Dot Net 5 in the backend, and Entity framework core On GitHub.
-Data Dictionary 
-**Filed Name   	Type	O/M	Value
+
+**Data Dictionary **
+Filed Name   	Type	O/M	Value
 First Name	   text	  M	 	No
 Last Name      text 	M		No
 Email	         text	  M		No
