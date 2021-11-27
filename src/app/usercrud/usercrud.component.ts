@@ -1,8 +1,12 @@
 import { ApiService } from './../shared/api.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+
 import { userModel } from '../modules/userCrud.model';
 import { MatTableDataSource } from '@angular/material/table';
+
+import { Router, ActivatedRoute } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { first } from 'rxjs/operators';
 
 
 @Component({
@@ -12,6 +16,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class UsercrudComponent implements OnInit {
   // :userModel
+  formSubmitted =false;
 UsermodelObj = new userModel();
  formValue !:FormGroup
   userData !: any;
@@ -23,13 +28,14 @@ UsermodelObj = new userModel();
     private api:ApiService) { }
 
   ngOnInit(): void {
-    this. formValue = this.formbuliber.group({
-      firstName :[''],
-      lastName :[''],
-      email :[''],
-      dbOfBirth :[''],
-      phoneNumber :[''],
-      gender :['']
+    this.formValue = this.formbuliber.group({
+      firstName: ['', Validators.required,Validators.pattern('[a-zA-Z]*')],
+      lastName: ['', Validators.required,Validators.pattern('[a-zA-Z]*')],
+      email: ['', [Validators.required, Validators.email]],
+      role: ['', Validators.required],
+      dbOfBirth:['',Validators.required],
+      phoneNumber:['',Validators.required,Validators.pattern('[0-9]*')],
+
     })
 this.getAllUsers();
 
@@ -108,5 +114,11 @@ clickAddUser(){
 
 
     })
+  }
+  formSubmit() {
+    this.formSubmitted = true;
+    if(this.formValue.valid){
+      alert("Form Submitted");
+    }
   }
 }
