@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "ss",
+      "lastName": "ss",
+      "email": "ss",
+      "dbOfBirth": "ggg",
+      "phoneNumber": "gg",
+      "gender": "ggg"
+    },
+    {
+      "id": 2,
+      "firstName": "ss",
+      "lastName": "ss",
+      "email": "ss",
+      "dbOfBirth": "144",
+      "phoneNumber": "ddddd",
+      "gender": "dddddd"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
